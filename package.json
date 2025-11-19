@@ -1,13 +1,14 @@
 {
-    "name": "tailadmin-react",
+    "name": "admin",
     "private": true,
     "version": "2.0.1",
     "type": "module",
-    "homepage": "https://themewagon.github.io/TailAdmin",
+    "homepage": "https://rojass2001.github.io/admin",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "deploy": "vite build && gh-pages --dotfiles -d dist",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "lint": "eslint .",
         "preview": "vite preview"
     },
